@@ -31,7 +31,7 @@ echo "<br>\n";
 //o nome deve iniciar por "pedro" ou deve iniciar por "maria"
 
 $criteria = new TCriteria;
-$criteria ->add(new TFilter("nome","like",'pedro%'), TExpression::OR_OPERATOR);
+$criteria ->add(new TFilter("nome "," like",'pedro%'), TExpression::OR_OPERATOR);
 $criteria ->add(new TFilter('nome ','like', 'maria%'), TExpression::OR_OPERATOR);
 
 echo $criteria->dump();
@@ -42,8 +42,8 @@ echo "<br>\n";
 //e o genero deve ser feminino (sexo = 'F')
 
 $criteria = new TCriteria;
-$criteria ->add(new TFilter("telefone","IS NOT",NULL));
-$criteria ->add(new TFilter("sexo","=", 'F'));
+$criteria ->add(new TFilter("telefone "," IS NOT ",NULL));
+$criteria ->add(new TFilter("sexo "," = " , ' F '));
 
 echo $criteria->dump();
 echo "<br>\n";
