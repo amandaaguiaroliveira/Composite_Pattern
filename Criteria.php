@@ -1,14 +1,14 @@
 <?php
  //carrega as classes necessárias 
 
- include_once 'TExpressions.class.php';
+ include_once 'TExpression.class.php';
  include_once 'TCriteria.class.php';
  include_once 'TFilter.class.php';
 
  //aqui vemos um exemplo do critério utilizando o operador OR
  // a idade deve ser menor que 16 anos e maior que 60 anos
 
-$criteria = new TCriteria();
+$criteria = new TCriteria;
 $criteria ->add(new TFilter('idade','<', 16), TExpression::OR_OPERATOR);
 $criteria ->add(new TFilter('idade','>',60), TExpression::OR_OPERATOR);
 

@@ -1,2 +1,2 @@
-# Composite_Pattern
- Repositório para aprendizado do pattern composite
+# Composite-Pattern 
+ Repositório par aprendizado do Pattern Composite
